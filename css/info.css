@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+.hideClass {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+/* header */
+div#headerWrap {
+  /* position: fixed;
+    left:0; top:0; */
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  /* z-index: 999; */
+}
+div#headerWrap > header {
+  /* width: 1200px; */
+  width: 95%;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+div#headerWrap > header > h1 {
+  width: 200px;
+  /* width: 16.666666px; */
+  margin: 0 auto;
+}
+div#headerWrap > header > h1 > a > img {
+  width: 100%;
+}
+div#headerWrap nav {
+  margin-bottom: 20px;
+}
+div#headerWrap nav > ul {
+  width: 100%;
+  text-align: center;
+}
+div#headerWrap nav > ul > li {
+  display: inline-block;
+  margin: 0 35px;
+}
+div#headerWrap nav > ul > li > a {
+  font: 20px "webfont02", sans-serif;
+  color: #ff00aa;
+}
+div#headerWrap nav > ul > li > a:hover {
+  color: #d6b5ff;
+}
+.selected {
+  color: #d6b5ff;
+  border-bottom: 3px solid #d6b5ff;
+}
+
+/* box01 */
+div#box01 {
+  background-color: #fce1e1;
+  margin: 0 auto;
+  width: 100%;
+  padding: 70px 0;
+}
+div#box01 > figure {
+  /* width :1200px; */
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+div#box01 > figure > figcaption {
+  float: left;
+  width: 400px;
+  text-align: center;
+}
+div#box01 > figure h3 {
+  font: 32px "webfont02", sans-serif;
+  margin: 35px;
+  color: #697070;
+}
+div#box01 > figure p {
+  font: bold 20px/34px "webfont01", sans-serif;
+  color: #5e2e4c;
+}
+div#box01 > figure p > span {
+  color: #ff7dff;
+}
+div#box01 > figure > img {
+  float: right;
+  width: 700px;
+  height: 500px;
+}
+/* box02 */
+div#box02 {
+  background-color: #fce1e1;
+  width: 100%;
+}
+div#box02 > h3 {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font: 30px "webfont01", sans-serif;
+  color: #e05c7d;
+  padding: 40px 0;
+  border-top: 2px dotted #fff;
+}
+div#box02 > ul {
+  /* width: 1200px; */
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+div#box02 > ul > li {
+  width: 20%;
+  margin: 0 auto;
+}
+div#box02 > ul > li > figure {
+  margin: 0 auto;
+}
+div#box02 > ul > li > figure > img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 35px;
+}
+div#box02 > ul > li figcaption {
+}
+div#box02 > ul > li figcaption > dl {
+  text-align: center;
+}
+div#box02 > ul > li figcaption > dl > dt {
+  font: bold 70px arial, sans-serif;
+  color: #fff;
+  margin-bottom: 25px;
+}
+div#box02 > ul > li figcaption > dl > dd {
+  font: 13px "webfont02", sans-serif;
+  color: #ff7dff;
+  margin-bottom: 70px;
+}
+/* box03 */
+div#box03 {
+  background-color: #fce1e1;
+  width: 100%;
+  border-top: 2px dotted #fff;
+  padding: 50px 0;
+}
+div#box03 > figure {
+  /* width: 1200px; */
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+div#box03 > figure > img {
+  width: 600px;
+  height: 500px;
+  float: left;
+}
+div#box03 > figure > figcaption {
+  width: 480px;
+  float: right;
+}
+div#box03 > figure h3 {
+  font: bold 30px "webfont02", sans-serif;
+  color: #4d4d4d;
+  margin-bottom: 35px;
+}
+div#box03 > figure dl {
+}
+div#box03 > figure dl > dt {
+  color: #fc8edb;
+  font: 30px "webfont03", sans-serif;
+  margin-bottom: 10px;
+}
+div#box03 > figure dl > dd {
+  color: #4d4d4d;
+  font: 12px "webfont03", sans-serif;
+  margin-bottom: 10px;
+}
+/* footer */
+div#footerWrap {
+  background-color: #4d4d4d;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+div#footerWrap > footer {
+  width: 90%;
+  margin: 0 auto;
+}
+div#footerWrap ul {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+div#footerWrap ul > li {
+  font: 15px "webfont01", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+div#footerWrap ul > li > ul {
+  display: block;
+}
+div#footerWrap ul > li > ul > li {
+  text-align: center;
+  margin: 0 auto;
+}
+div#footerWrap ul > li > ul > li > a {
+  color: #fff;
+}
+div#footerWrap ul > li > ul > li > a:hover {
+  color: #ff00aa;
+}
+div#footerWrap ul > li > dl {
+}
+div#footerWrap ul > li > dl > dt {
+  display: inline;
+}
+div#footerWrap ul > li > dl > dd {
+  display: inline;
+}

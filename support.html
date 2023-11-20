@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프앙디</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/support.css">
+  <link rel="stylesheet" href="css/supportMedia.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/support.js"></script>
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=k5iq38umo0"></script>
+
+  
+  </head>
+  <body>
+      <div id="wrap">
+          <!-- header -->
+          <div id="headerWrap">
+            <header>
+                <h1><a href="#">
+                        <img src="img/main/logo.PNG" alt="프앙디로고">
+                  </a></h1>
+                  <nav>
+                      <h2 class ="hideClass">메인네비게이션</h2>
+                      <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="info.html">Info</a></li>
+                          <li><a href="menu.html">Menu</a></li>
+                          <li class="selected"><a href="support.html">Support</a></li>
+                      </ul>
+                  </nav>
+            </header>
+          </div>
+          <!-- tab -->
+          <div id ="SubMenu">
+            <nav>
+                <h3 class="hideClass">서브메뉴</h3>
+                <ul>
+                    <li><a href="#box01">매장찾기</a></li>
+                    <li><a href="#box02">매장안내</a></li>
+                    <li><a href="#box03">고객지원</a></li>
+                </ul>
+            </nav>
+        </div>
+          <div id="box01">
+              <h3>매장찾기</h3>
+              <section>
+                  <div id ="map">
+                  </div>
+                  <ul>
+                      <li id="Seoul"><p>서울 종로 본점</p></li>
+                      <li id ="Bucheon"><p>부천 역곡점</p></li>
+                      <li id="Busan"><p>부산 센트럴파크점</p></li>
+                      <li id="Daejeon"><p>대전 복합터미널점</p></li>
+                  </ul>
+              </section>
+          </div>
+        <div id="box02">
+            <h3>매장안내</h3>
+            <ul>
+                <li><dl>
+                    <dt>본점 오시는길</dt>
+                    <dd>종로3가역 4번출구(5호선), 맞은편 CU편의점 옆 골목으로 들어오세요.첫 번째 오른쪽 골목으로 들어오신 후 10m 지점에서 첫 번째 왼쪽 골목, 첫 번째 한옥 건물에 위치하고 있습니다.</dd>
+                </dl></li>
+                <li>
+                    <dl>
+                        <dt>‌이용시간</dt>
+                    <dd>‌MON - FRI 12:00 ~ 22:00<br>
+                        ‌SAT 11:00 ~ 22:00<br>
+                        SUN 11:00 ~ 21:00</dd>
+                    </dl></li>
+                <li><dl>
+                    <dt>이용안내</dt>
+                    <dd>단체석 , 포장, 무선인터넷</dd> 
+                </dl></li>
+            </ul>
+        </div>
+        <div id="box03">
+            <h3>고객지원</h3>
+            <section id ="sec01">
+                <h4>고객센터</h4>
+                <ul>
+                    <li>
+                    <img src="img/logo/전화.png" alt="전화번호">
+                    <div>
+                    <a href="tel:000-000-000">전화번호</a>
+                    </div>
+                 </li>
+                 <li>
+                    <img src="img/logo/카톡1.png" alt="카카오톡">
+                    <div>
+                    <a href="http://open.kakao.com/o/sPQH9lOd">카카오톡</a>
+                </div>
+                 </li>
+                 <li>
+                    <img src="img/logo/인스.png" alt="인스타그램">
+                    <div>
+                    <a href="https://www.instagram.com/haniuni00/">인스타그램</a>
+                    </div>
+                 </li>
+            </section>
+            <section id="sec02"> 
+                <h4>고객의 소리</h4>
+                <p>
+                    문의 하시면 이메일로 답변 남겨드리겠습니다.<br>
+                    소중한 의견 감사드립니다.</p>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend class="hideClass">고객의 소리</legend>
+                            <ul>
+                                <li>
+                                    <label for="UserName">Name</label>
+                                    <input type="text" id="UserName" required
+                                    placeholder="Name">
+                                </li>
+                                <li>
+                                    <label for="UserEmail">Email</label>
+                                    <input type="email" id="UserEmail" required
+                                    placeholder="Email">
+                                </li>
+                                <li>
+                                    <label for="UserPhone">Phone</label>
+                                    <input type="tel" id="UserPhone" required
+                                    placeholder="Phone">
+                                </li>
+                                <li>
+                                    <label for="UserMessage">Message</label>
+                                    <textarea id="UserMessage" 
+                                    placeholder="Message"></textarea>
+                                </li>
+                            </ul>
+                            <p>
+                                <input type="submit" value="send">
+                            </p>
+                        </fieldset>
+                    </form>
+            </section>
+        </div>
+         <!-- footer -->
+         <div id="footerWrap">
+            <footer>
+                <ul>
+                    <li>MENU
+                        <ul>
+                            <li><a href="menu.html">마카롱</a></li>
+                            <li><a href="menu.html">크로플</a></li>
+                            <li><a href="menu.html">다쿠와즈</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>주소:</dt>
+                            <dd>서울시 종로구 익선동 166-44</dd>
+                            <br>
+                            <dt>사업자등록번호:</dt>
+                            <dd>444-46-00173</dd>
+                            <br>
+                            <dt>전화번호 :</dt>
+                            <dd>02-741-59</dd>
+                        </dl>
+                        <small>Copyrights ⓒ 2015 France Ange Dessert Owner</small>
+                    </li>
+                    <li>Support
+                      <ul>
+                          <li><a href="#box01">매장찾기</a></li>
+                          <li><a href="#box02">매장안내</a></li>
+                          <li><a href="#box03">고객지원</a></li>
+                      </ul>
+                  </li>
+                </ul>
+            </footer>
+          </div>
+    </div>
+    <!-- -->
+
+    <script>
+//map
+var map = new naver.maps.Map('map', {
+    center: new naver.maps.LatLng(37.572962, 126.989686),
+    zoom: 15
+});
+
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.572962, 126.989686),
+    map: map
+});
+
+var Seoul = new naver.maps.LatLng(37.572962, 126.989686),
+Bucheon = new naver.maps.LatLng(37.486678, 126.811387),
+Busan = new naver.maps.LatLng(35.151800, 129.061107),
+Daejeon = new naver.maps.LatLng(36.351677, 127.437408);
+$('#Seoul').on('click',function(e){
+    e.preventDefault();
+    map.setCenter(Seoul);
+    marker.setPosition(Seoul);
+});
+$('#Bucheon').on('click',function(e){
+    e.preventDefault();
+    map.setCenter(Bucheon);
+    marker.setPosition(Bucheon);
+});
+$('#Busan').on('click',function(e){
+    e.preventDefault();
+    map.setCenter(Busan);
+    marker.setPosition(Busan);
+});
+$('#Daejeon').on('click',function(e){
+    e.preventDefault();
+    map.setCenter(Daejeon);
+    marker.setPosition(Daejeon);
+});
+         $(function(){
+            let wWidth =$(window).width();
+            if(wWidth>=800){
+                Smap();
+                sMenu();
+            }
+            if(wWidth <=779 && wWidth>=480){
+                Smap();
+            }
+            if(wWidth <=479){
+                formValue();
+                Smap();
+            }
+ });
+
+ $(document).ready(function(){
+     $('#sec01>ul>li>div').hide();
+     $('#sec01>ul>li').mouseover(function(){
+         $('#sec01>ul>li>div').fadeIn(500,function(){
+        $('sec01>ul>li>div').css('background-color','rgba(250, 181, 181, 0.8)');  
+        });
+     });
+     $('#sec01>ul>li').mouseleave(function(){
+         $('#sec01>ul>li>div').hide();
+     });
+ });
+
+        </script>
+</body> 
+</html>

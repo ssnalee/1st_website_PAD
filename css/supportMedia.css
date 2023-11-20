@@ -1,0 +1,356 @@
+@charset "utf-8";
+
+@media screen and(min-width:1200px) {
+}
+@media screen and (max-width: 1199px) and (min-width: 780px) {
+  div#box01 > section {
+    width: 90%;
+  }
+  div#box01 > section > ul > li {
+    border: 2px solid rgb(255, 248, 255);
+    font: 20px "webfont01", sans-serif;
+  }
+  div#box02 > ul > li > dl {
+    font: 20px "webfont01", sans-serif;
+  }
+  div#box03 > section {
+    width: 95%;
+  }
+  div#box03 > section#sec01 > ul > li > img {
+    width: 230px;
+    height: 200px;
+  }
+  div#box03 > section#sec01 > ul > li > div {
+    width: 230px;
+    height: 200px;
+  }
+  div#box03 > section#sec02 > form > fieldset {
+    width: 70%;
+  }
+}
+/* 태블릿 */
+@media screen and (max-width: 779px) and (min-width: 480px) {
+  /* header */
+  div#headerWrap > header {
+    padding: 10px 0;
+  }
+  div#headerWrap > header > h1 {
+    width: 150px;
+  }
+  div#headerWrap nav > ul > li {
+    margin: 0 10px;
+  }
+  /* subMenu */
+  div#SubMenu {
+    display: none;
+  }
+  /* box01 */
+  div#box01 > h3 {
+    font: bold 30px "webfont01", sans-serif;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(243, 172, 172);
+  }
+  div#box01 > section {
+    width: 90%;
+    height: 60vh;
+  }
+  div#box01 > section > div#map {
+    width: 100%;
+    height: 50%;
+    float: none;
+    margin: 20px auto;
+  }
+  div#box01 > section > ul {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  div#box01 > section > ul > li {
+    width: 22%;
+    text-align: center;
+    font: 23px "webfont01", sans-serif;
+  }
+  /* box02 */
+  div#box02 > h3 {
+    font: bold 30px "webfont01", sans-serif;
+    color: #fff;
+    background-color: rgb(243, 172, 172);
+    margin-bottom: 20px;
+  }
+  div#box02 > ul {
+    width: 80%;
+    border: 3px solid #ffffff;
+    padding: 25px 0;
+  }
+  div#box02 > ul > li {
+    margin-bottom: 35px;
+    height: auto;
+  }
+  div#box02 > ul > li > dl {
+    font: 20px "webfont01", sans-serif;
+    padding: 10px 0;
+    border: 2px solid rgb(253, 181, 181);
+  }
+  /* box03 */
+  div#box03 > h3 {
+    font: bold 30px "webfont01", sans-serif;
+    color: #fff;
+    background-color: rgb(243, 172, 172);
+  }
+  div#box03 > section {
+    width: 95%;
+  }
+  div#box03 > section > h4 {
+    font: bold 25px "webfont01", sans-serif;
+    color: #ffffff;
+    background-color: rgb(252, 180, 170);
+  }
+  div#box03 > section#sec01 > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  div#box03 > section#sec01 > ul > li {
+    margin-bottom: 10px;
+  }
+  div#box03 > section#sec01 > ul > li > div > a {
+    font: 25px "webfont03", sans-serif;
+  }
+
+  /* sec02 */
+  div#box03 > section#sec02 > form > fieldset {
+    width: 70%;
+  }
+  div#box03 > section#sec02 > form ul > li {
+    margin-bottom: 20px;
+    padding-left: 50px;
+  }
+  div#box03 > section#sec02 > form ul > li > label {
+    width: 50px;
+    height: 50px;
+  }
+  div#box03 > section#sec02 > form ul > li > input {
+    font: 18px "webfont02", sans-serif;
+  }
+  div#box03 > section#sec02 > form ul > li > textarea {
+    font: 18px/50px "webfont02", sans-serif;
+  }
+  div#box03 > section#sec02 > form p {
+    text-align: center;
+  }
+  div#box03 > section#sec02 > form p > input {
+    width: 100%;
+    height: 50px;
+    font: 25px "webfont02", sans-serif;
+  }
+  /* footer */
+  div#footerWrap {
+    padding: 20px 0;
+  }
+  div#footerWrap ul > li:nth-child(1) {
+    display: none;
+  }
+  div#footerWrap ul > li:nth-child(3) {
+    display: none;
+  }
+
+  /*  */
+}
+
+/* 모바일 */
+@media screen and (max-width: 479px) {
+  /* header */
+  div#headerWrap > header {
+    padding: 10px 0;
+  }
+  div#headerWrap > header > h1 {
+    display: none;
+  }
+  div#headerWrap nav {
+    margin-bottom: 0px;
+  }
+  div#headerWrap nav > ul > li {
+    margin: 0 5px;
+  }
+  div#headerWrap nav > ul > li > a {
+    font: 15px "webfont02", sans-serif;
+  }
+  /* subMenu */
+  div#SubMenu {
+    display: none;
+  }
+  /* box01 */
+  div#box01 > h3 {
+    font: normal 25px "webfont01", sans-serif;
+    padding: 20px 0;
+    color: #fff;
+    background-color: rgb(243, 172, 172);
+  }
+  div#box01 > section {
+    width: 90%;
+    height: 100vh;
+  }
+  div#box01 > section > div#map {
+    width: 100%;
+    height: 50vh;
+    float: none;
+    margin: 20px auto;
+  }
+  div#box01 > section > ul {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+  div#box01 > section > ul > li {
+    width: 100%;
+    text-align: center;
+    font: 20px "webfont01", sans-serif;
+    height: 10vh;
+  }
+  /* box02 */
+  div#box02 > h3 {
+    font: bold 25px "webfont01", sans-serif;
+    padding: 20px 0;
+    color: #fff;
+    background-color: rgb(243, 172, 172);
+    margin-bottom: 0px;
+  }
+  div#box02 > ul {
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgb(139, 139, 139);
+    padding: 20px 0;
+  }
+  div#box02 > ul > li {
+    margin-bottom: 30px;
+    height: auto;
+  }
+  div#box02 > ul > li > dl {
+    font: 18px/36px "webfont01", sans-serif;
+    padding: 10px 0;
+    border: 2px solid rgb(139, 139, 139);
+  }
+  div#box02 > ul > li > dl > dt {
+    width: auto;
+    float: none;
+    text-align: center;
+  }
+  div#box02 > ul > li > dl > dd {
+    width: auto;
+    float: none;
+    text-align: center;
+  }
+  /* box03 */
+  div#box03 > h3 {
+    font: bold 25px "webfont01", sans-serif;
+    color: #fff;
+    background-color: rgb(243, 172, 172);
+    padding: 20px 0;
+  }
+  div#box03 > section {
+    width: 95%;
+  }
+  div#box03 > section > h4 {
+    font: bold 22px "webfont01", sans-serif;
+    color: #3d3d3d;
+    background-color: rgb(255, 255, 255);
+  }
+  div#box03 > section#sec01 > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  div#box03 > section#sec01 > ul > li {
+    margin-bottom: 10px;
+  }
+  div#box03 > section#sec01 > ul > li > img {
+    width: 200px;
+    height: 200px;
+  }
+  div#box03 > section#sec01 > ul > li > div {
+    width: 200px;
+    height: 200px;
+  }
+  div#box03 > section#sec01 > ul > li > div > a {
+    font: 18px "webfont03", sans-serif;
+  }
+  div#box03 > section#sec02 {
+    padding: 20px 0;
+  }
+  div#box03 > section#sec02 > p {
+    font: 15px "webfont02", sans-serif;
+  }
+  div#box03 > section#sec02 > form > fieldset {
+    width: 95%;
+  }
+  div#box03 > section#sec02 > form ul > li {
+    margin-bottom: 20px;
+    padding-left: 0px;
+  }
+  div#box03 > section#sec02 > form ul > li > label {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background: none;
+    text-indent: 16px;
+    border-radius: 0;
+    font: 18px/50px "webfont02", sans-serif;
+    color: rgb(250, 116, 116);
+  }
+  div#box03 > section#sec02 > form ul > li:nth-child(2) > label {
+    background-image: none;
+  }
+  div#box03 > section#sec02 > form ul > li:nth-child(3) > label {
+    background-image: none;
+  }
+  div#box03 > section#sec02 > form ul > li:nth-child(4) > label {
+    background-image: none;
+  }
+  div#box03 > section#sec02 > form ul > li > input {
+    border-radius: 0;
+    font: 18px/50px "webfont02", sans-serif;
+    text-indent: 16px;
+  }
+  div#box03 > section#sec02 > form ul > li > textarea {
+    width: 100%;
+    height: 120px;
+    font: 18px/50px "webfont02", sans-serif;
+    text-indent: 16px;
+    border-radius: 0;
+  }
+  div#box03 > section#sec02 > form p {
+    text-align: center;
+  }
+  div#box03 > section#sec02 > form p > input {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(248, 118, 118);
+    font: 25px "webfont02", sans-serif;
+  }
+  /* footer */
+  div#footerWrap {
+    padding: 0px 0 30px;
+  }
+  div#footerWrap ul > li:nth-child(1) {
+    display: none;
+  }
+  div#footerWrap ul > li:nth-child(3) {
+    display: none;
+  }
+  div#footerWrap ul > li:nth-child(2) > dl > dt {
+    display: none;
+  }
+  div#footerWrap ul > li:nth-child(2) > dl > dd {
+    display: none;
+  }
+  div#footerWrap ul > li {
+    font: 12px "webfont01", sans-serif;
+  }
+
+  /*  */
+}
