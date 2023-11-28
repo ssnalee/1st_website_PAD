@@ -1,5 +1,13 @@
+
 {
+  "name": "pad",
+  "private": true,
   "dependencies": {
     "gh-pages": "^6.1.0"
-  }
+  },
+  "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://ssnalee.github.io/1st_website_PAD/"
 }

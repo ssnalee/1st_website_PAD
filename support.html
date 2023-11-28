@@ -83,21 +83,21 @@
             <section id ="sec01">
                 <h4>고객센터</h4>
                 <ul>
-                    <li>
+                    <li class="info">
                     <img src="img/logo/전화.png" alt="전화번호">
-                    <div>
+                    <div class="detail-info">
                     <a href="tel:000-000-000">전화번호</a>
                     </div>
                  </li>
-                 <li>
+                 <li class="info">
                     <img src="img/logo/카톡1.png" alt="카카오톡">
-                    <div>
+                    <div class="detail-info">
                     <a href="http://open.kakao.com/o/sPQH9lOd">카카오톡</a>
                 </div>
                  </li>
-                 <li>
+                 <li class="info">
                     <img src="img/logo/인스.png" alt="인스타그램">
-                    <div>
+                    <div class="detail-info">
                     <a href="https://www.instagram.com/haniuni00/">인스타그램</a>
                     </div>
                  </li>
@@ -228,14 +228,14 @@ $('#Daejeon').on('click',function(e){
  });
 
  $(document).ready(function(){
-     $('#sec01>ul>li>div').hide();
-     $('#sec01>ul>li').mouseover(function(){
-         $('#sec01>ul>li>div').fadeIn(500,function(){
-        $('sec01>ul>li>div').css('background-color','rgba(250, 181, 181, 0.8)');  
+     $('#sec01 .detail-info').hide();
+     $('#sec01 .info').mouseover(function(){
+        $(this).find('.detail-info').fadeIn(300,function(){
+            $(this).css('background-color','rgba(250, 181, 181, 0.5)');  
         });
      });
-     $('#sec01>ul>li').mouseleave(function(){
-         $('#sec01>ul>li>div').hide();
+     $('#sec01 .info').mouseleave(function(){
+        $(this).find('.detail-info').fadeOut(300,()=>{});
      });
  });
 
